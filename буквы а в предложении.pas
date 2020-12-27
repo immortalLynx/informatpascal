@@ -1,17 +1,17 @@
 program letters;
-var sentense: string;
-var index, total: integer;
+var sentence: string;
+var total: integer;
 
 begin
   total := 0;
-  index := 0;
 
   writeln('Введите предложение');
-  readln(sentense);
-  writeln(sentense);
+  readln(sentence);
+  writeln(sentence);
 
-  for index := 1 to length(sentense) do
-    if (sentense[index] = 'а') or (sentense[index] = 'А') then
+  for var index: integer := 1 to length(sentence) do
+
+    if (sentence[index] = 'а') or (sentence[index] = 'А') then
       total := total + 1;
   end;
   writeln('Кол-во букв "а" или "А" в предложении равно ', total);
