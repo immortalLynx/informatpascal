@@ -1,13 +1,10 @@
-﻿program abc;
-var x,a, i: integer;
+program abc;
+var x, total: integer;
 begin
-x := 0;
-a :=100;
-i := 0;
-for x:= 0 to 100 do begin
-if not Odd(x) and (x <> 0) then
-  WriteLn('x ', i, ' равно ', x);
-i := i+1;
+  total := 100;
 
-end;
+  for x:= 1 to total do begin
+    if (x mod 2 == 0) then
+      WriteLn('x ', x , ' равно ', x);
+  end;
 end.
