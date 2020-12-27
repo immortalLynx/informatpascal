@@ -1,18 +1,16 @@
 ﻿program letters;
-var pred1:string;
-var i, a, letter: integer;
+var sentense:string;
+var i, index: integer;
 begin
-i :=0;
-a := 0;
-letter := 1;
+index := 1;
 writeln('Введите предложение');
-readln(pred1);
-writeln(pred1);
-i := length(pred1);
+readln(sentense);
+writeln(sentense);
 
-while letter <= i do begin
-writeln(pred1[letter]);
-letter := letter + 1;
+while index <= length(sentense) do begin
+
+writeln(sentense[index]);
+index := index + 1;
 end;
 
 end.
