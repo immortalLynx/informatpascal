@@ -1,14 +1,21 @@
-﻿program tablica;
-var y, x, h, b, a: real;
+program tablica;
+var y, x, h, a, b, c, k: real;
+
 begin
-h := 0.5;
-x := 0;
-b := 9;
-a := 0;
-while (x <= b) and (x >= a) do begin
-y := 6*x-4;
-writeln('При x равном ', x);
-writeln('у равен ', y);
-x := x + 0.5;
-end;
+  h := 0.5;
+  a := 0;
+  b := 9;
+  c := 4;
+  k := 6;
+  
+  x := 0;
+
+  while (x >= a) and (x <= b) do begin
+    y := k*x-c;
+    
+    writeln('При x равном ', x);
+    writeln('у равен ', y);
+    
+    x := x + h;
+  end;
 end.
